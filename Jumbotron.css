@@ -1,0 +1,56 @@
+header{
+    background-color: gray;
+    background:url(https://images.unsplash.com/photo-1502759683299-cdcd6974244f?auto=format&fit=crop&w=440&h=220&q=60) ;
+    background-size: cover;
+    color: rgb(207, 203, 203);
+    height: 15em;
+    display: flex;
+    flex-direction: column; 
+    justify-content: flex-end;
+}
+header > div:nth-of-type(1){
+    position: fixed; 
+    top: 0px; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: .5em var(--h-pad);
+    margin-bottom: auto;/*de la version vieja*/
+    font-size: 1.5em;
+    color: white;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: black;
+    opacity: 0.5;
+}
+header > div:nth-of-type(1) > div,
+header > div:nth-of-type(1) > div > svg{
+    display: flex; 
+    font-size: 1em;
+    line-height: 1em;
+}
+header > div:nth-of-type(2){
+    display: flex;
+    flex-direction: row;
+    line-height: 3em;
+    padding-bottom: var(--h-pad)
+}
+header > div:nth-of-type(2) > div:nth-of-type(1){
+    background-color: green;
+    /* background: url(https://randomuser.me/api/portraits/men/1.jpg); */
+    background-size: cover;
+    width: 3em;
+    height: 3em;
+    border-radius: 50%;
+}
+header > div:nth-of-type(2) > div:nth-of-type(2){
+    padding-left: .5em;
+    color: var(--link-color);
+    font-weight: bold;
+}
+header > div, header > h1{
+    padding: .25em var(--h-pad);
+}
+header > h1{
+    font-size: 2rem;
+}
